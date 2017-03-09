@@ -370,7 +370,7 @@
 						}
 
 					// Otherwise, check for a matching article.
-						else if ($main_articles.filter(location.hash).length > 0) {
+						else if (location.hash.indexOf("#") !== -1) {
 
 							// Prevent default.
 								event.preventDefault();

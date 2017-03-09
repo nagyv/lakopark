@@ -88,7 +88,7 @@
 						$main._showArticle($article, initial);
 					} else {
 						$.get(window.location.pathname + id).always(function(data) {
-							$article.append(data);
+							$article.prepend(data);
 							$article.addClass("loaded");
 							$main._showArticle($article, initial);
 						});

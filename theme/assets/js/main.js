@@ -89,7 +89,7 @@
 					} else {
 						$body.addClass('is-loading');
 						$.get(window.location.pathname + id).always(function(data) {
-							$article.html(data);
+							$article.append(data);
 							$article.addClass("loaded");
 							$body.removeClass('is-loading');
 							$main._showArticle($article, initial);

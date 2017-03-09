@@ -97,9 +97,9 @@
 					var $article = $main_articles.filter('#' + id);
 
 					// No such article? Bail.
-						if ($article.length == 0)
+						if ($article.length == 0) {
 							close( $('<article id="' + id + '"></article>').appendTo($main) );
-							return;
+						}
 
 					if($article.hasClass("loaded")) {
 						$main._showArticle($article, initial);

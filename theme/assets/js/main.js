@@ -104,7 +104,7 @@
 					if($article.hasClass("loaded")) {
 						$main._showArticle($article, initial);
 					} else {
-						$.get(window.location.pathname + id).always(function(data) {
+						$.get(window.location.pathname + id.replace("_", "/")).always(function(data) {
 							$article.prepend(data);
 							$article.addClass("loaded");
 							$main._showArticle($article, initial);
@@ -377,7 +377,7 @@
 								event.stopPropagation();
 
 							// Show article.
-								$main._show(location.hash.substr(1));
+								$main._show(location.hash.substr(1).replace("/", "_"));
 
 						}
 

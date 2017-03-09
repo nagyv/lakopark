@@ -71,6 +71,22 @@
 
 				}
 
+		// Close.
+		function close($this) {
+
+				$('<div class="close">Close</div>')
+					.appendTo($this)
+					.on('click', function() {
+						location.hash = '';
+					});
+
+				// Prevent clicks from inside article from bubbling.
+				$this.on('click', function(event) {
+					event.stopPropagation();
+				});
+
+			}
+
 		// Main.
 			var	delay = 325,
 				locked = false;
@@ -82,6 +98,7 @@
 
 					// No such article? Bail.
 						if ($article.length == 0)
+							close( $('<article id="' + id + '"></article>').appendTo($main) );
 							return;
 
 					if($article.hasClass("loaded")) {
@@ -300,25 +317,12 @@
 
 						}, delay);
 
-
 				};
 
 			// Articles.
 				$main_articles.each(function() {
 
-					var $this = $(this);
-
-					// Close.
-						$('<div class="close">Close</div>')
-							.appendTo($this)
-							.on('click', function() {
-								location.hash = '';
-							});
-
-					// Prevent clicks from inside article from bubbling.
-						$this.on('click', function(event) {
-							event.stopPropagation();
-						});
+					close($(this));
 
 				});
 

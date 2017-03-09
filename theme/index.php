@@ -4,14 +4,17 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html <?php language_attributes(); ?> >
 	<head>
 		<title>Dimension by HTML5 UP</title>
-		<meta charset="utf-8" />
+		<meta charset="<?php bloginfo("charset");?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/noscript.css" /></noscript>
+
+		<?php wp_head();?>
 	</head>
 	<body>
 
@@ -377,10 +380,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.min.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/skel.min.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/util.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/main.js"></script>
 
 	</body>
 </html>

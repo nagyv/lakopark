@@ -84,6 +84,20 @@
 						if ($article.length == 0)
 							return;
 
+					if($article.hasClass("loaded")) {
+						$main._showArticle($article, initial);
+					} else {
+						$body.addClass('is-loading');
+						$.get(window.location.pathname + id, function(data) {
+							$article.html(data);
+							$article.addClass("loaded");
+							$body.removeClass('is-loading');
+							$main._showArticle($article, initial);
+						});
+					}
+				};
+
+				$main._showArticle($article, initial) {
 					// Handle lock.
 
 						// Already locked? Speed through "show" steps w/o delays.
@@ -200,7 +214,6 @@
 								}, delay);
 
 						}
-
 				};
 
 				$main._hide = function(addState) {

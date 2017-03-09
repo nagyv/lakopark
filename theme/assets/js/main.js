@@ -100,6 +100,7 @@
 						if ($article.length == 0) {
 							$article = $('<article id="' + id + '"></article>');
 							$article.appendTo($main);
+							$main_articles = $main.children('article'); // update main_articles
 							close($article);
 						}
 

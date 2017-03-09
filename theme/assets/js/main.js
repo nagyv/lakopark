@@ -98,7 +98,9 @@
 
 					// No such article? Bail.
 						if ($article.length == 0) {
-							close( $('<article id="' + id + '"></article>').appendTo($main) );
+							$article = $('<article id="' + id + '"></article>');
+							$article.appendTo($main);
+							close($article);
 						}
 
 					if($article.hasClass("loaded")) {

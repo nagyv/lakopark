@@ -97,7 +97,7 @@
 					}
 				};
 
-				$main._showArticle($article, initial) {
+				$main._showArticle = function($article, initial) {
 					// Handle lock.
 
 						// Already locked? Speed through "show" steps w/o delays.

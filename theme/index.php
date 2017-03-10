@@ -10,6 +10,7 @@
 		<meta charset="<?php bloginfo("charset");?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/assets/css/noscript.css" /></noscript>
@@ -74,6 +75,28 @@
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/skel.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/util.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#1b1f22"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#14a7d0",
+      "border": "#14a7d0"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "message": "Ez a honlap sütiket használ a felhasználói élmény növeléséhez.<br/>This website uses cookies to ensure you get the best experience.",
+    "dismiss": "Ok",
+    "link": "Részletek / More information"
+  }
+})});
+</script>
 
 	</body>
 </html>

@@ -23,6 +23,7 @@
 			$header = $('#header'),
 			$footer = $('#footer'),
 			$main = $('#main'),
+			$spinner = $('#spinner'),
 			$main_articles = $main.children('article');
 
 		// Disable animations/transitions until the page has loaded.
@@ -74,6 +75,8 @@
 		// Close.
 		function close($this) {
 
+				if($this.id == "spinner") return;
+
 				$('<div class="close">Close</div>')
 					.appendTo($this)
 					.on('click', function() {
@@ -107,6 +110,7 @@
 					if($article.hasClass("loaded")) {
 						$main._showArticle($article, initial);
 					} else {
+						$main._showArticle($spinner, initial);
 						$.get(window.location.pathname + id.replace("_", "/")).always(function(data) {
 							$article.prepend(data);
 							$article.addClass("loaded");

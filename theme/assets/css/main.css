@@ -1602,27 +1602,16 @@
 
 @-webkit-keyframes uil-default-anim { 0% { opacity: 1} 100% {opacity: 0} }
 @keyframes uil-default-anim { 0% { opacity: 1} 100% {opacity: 0} }
+.uil-default-css { margin: 0px auto; position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(1){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -2s;animation-delay: -2s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(2){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -1.6666666666666667s;animation-delay: -1.6666666666666667s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(3){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -1.3333333333333335s;animation-delay: -1.3333333333333335s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(4){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -1s;animation-delay: -1s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(5){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -0.6666666666666667s;animation-delay: -0.6666666666666667s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(6){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: -0.33333333333333326s;animation-delay: -0.33333333333333326s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(7){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 0s;animation-delay: 0s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(8){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 0.3333333333333335s;animation-delay: 0.3333333333333335s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(9){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 0.6666666666666665s;animation-delay: 0.6666666666666665s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(10){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 1s;animation-delay: 1s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(11){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 1.3333333333333335s;animation-delay: 1.3333333333333335s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}
 .uil-default-css > div:nth-of-type(12){-webkit-animation: uil-default-anim 4s linear infinite;animation: uil-default-anim 4s linear infinite;-webkit-animation-delay: 1.6666666666666665s;animation-delay: 1.6666666666666665s;}
-.uil-default-css { position: relative;background:none;width:200px;height:200px;}

@@ -85,8 +85,8 @@ window.cookieconsent.initialise({
     },
     "button": {
       "background": "transparent",
-      "text": "#14a7d0",
-      "border": "#14a7d0"
+      "text": "#f5b982",
+      "border": "#f5b982"
     }
   },
   "position": "bottom-right",

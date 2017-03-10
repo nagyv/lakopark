@@ -75,7 +75,7 @@
 		// Close.
 		function close($this) {
 
-				if($this.id == "spinner") return;
+				if($this[0].id == "spinner") return;
 
 				$('<div class="close">Close</div>')
 					.appendTo($this)

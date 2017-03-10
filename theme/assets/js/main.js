@@ -426,6 +426,31 @@
 							$main._show(location.hash.substr(1), true);
 						});
 
+
+
+		$window.on('load', function() {
+				window.setTimeout(function() {
+					window.cookieconsent.initialise({
+					  "palette": {
+					    "popup": {
+					      "background": "#1b1f22"
+					    },
+					    "button": {
+					      "background": "transparent",
+					      "text": "#f5b982",
+					      "border": "#f5b982"
+					    }
+					  },
+					  "position": "bottom-right",
+					  "content": {
+					    "message": "Ez a honlap sütiket használ a felhasználói élmény növeléséhez.<br/>This website uses cookies to ensure you get the best experience.",
+					    "dismiss": "Ok",
+					    "link": "Részletek / More information"
+					  }
+					});
+				}, 200);
+			});
+
 	});
 
 })(jQuery);

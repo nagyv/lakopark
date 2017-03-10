@@ -71,32 +71,10 @@
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/skel.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/util.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/main.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#1b1f22"
-    },
-    "button": {
-      "background": "transparent",
-      "text": "#f5b982",
-      "border": "#f5b982"
-    }
-  },
-  "position": "bottom-right",
-  "content": {
-    "message": "Ez a honlap sütiket használ a felhasználói élmény növeléséhez.<br/>This website uses cookies to ensure you get the best experience.",
-    "dismiss": "Ok",
-    "link": "Részletek / More information"
-  }
-})});
-</script>
-
 	</body>
 </html>

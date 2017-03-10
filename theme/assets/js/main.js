@@ -439,7 +439,10 @@
 					      "background": "transparent",
 					      "text": "#f5b982",
 					      "border": "#f5b982"
-					    }
+					    }//,
+					   //  "content": {
+   					// 		 "href": "www.example.com"
+  						// }
 					  },
 					  "position": "bottom-right",
 					  "content": {

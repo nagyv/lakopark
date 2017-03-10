@@ -70,6 +70,8 @@
 		<!-- BG -->
 			<div id="bg"></div>
 
+		<?php wp_footer(); ?>
+
 		<!-- Scripts -->
 			<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.min.js"></script>

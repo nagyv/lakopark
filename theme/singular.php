@@ -1,4 +1,5 @@
 <?php
+
 // Start the loop.
 while ( have_posts() ) : the_post();
 
@@ -7,4 +8,5 @@ while ( have_posts() ) : the_post();
 
 // End the loop.
 endwhile;
-?>
+
+wp_footer();

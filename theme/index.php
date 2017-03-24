@@ -70,13 +70,13 @@
 		<!-- BG -->
 			<div id="bg"></div>
 
-		<?php wp_footer(); ?>
-
 		<!-- Scripts -->
 			<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/jquery.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/skel.min.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/util.js"></script>
 			<script src="<?php echo get_stylesheet_directory_uri();?>/assets/js/main.js"></script>
+
+		<?php wp_footer(); ?>
 	</body>
 </html>

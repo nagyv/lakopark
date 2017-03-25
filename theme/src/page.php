@@ -2,7 +2,8 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section>
+		<section class="wrapper style1 align-center">
+        <div class="inner">
 
 			<h1><?php the_title(); ?></h1>
 
@@ -36,6 +37,7 @@
 
 		<?php endif; ?>
 
+		</div>
 		</section>
 		<!-- /section -->
 	</main>

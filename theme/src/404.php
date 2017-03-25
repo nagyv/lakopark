@@ -2,7 +2,8 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section>
+		<section class="wrapper style1 align-center">
+        <div class="inner">
 
 			<!-- article -->
 			<article id="post-404">
@@ -15,6 +16,7 @@
 			</article>
 			<!-- /article -->
 
+		</div>
 		</section>
 		<!-- /section -->
 	</main>

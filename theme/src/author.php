@@ -2,7 +2,8 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section>
+		<section class="wrapper style1 align-center">
+        <div class="inner">
 
 		<?php if (have_posts()): the_post(); ?>
 
@@ -72,6 +73,7 @@
 
 			<?php get_template_part('pagination'); ?>
 
+		</div>
 		</section>
 		<!-- /section -->
 	</main>

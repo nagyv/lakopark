@@ -2,7 +2,8 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section>
+		<section class="wrapper style1 align-center">
+        <div class="inner">
 
 			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
 
@@ -10,6 +11,7 @@
 
 			<?php get_template_part('pagination'); ?>
 
+        </div>
 		</section>
 		<!-- /section -->
 	</main>

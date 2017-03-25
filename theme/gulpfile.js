@@ -13,8 +13,14 @@ var gulp = require( "gulp" ),
 		"src/js/lib/conditionizr-4.3.0.min.js",
 		/** jQuery */
 		"src/bower_components/jquery/dist/jquery.js",
+		/** story scripts */
+		"src/js/lib/jquery.scrollex.min.js",
+		"src/js/lib/jquery.scrolly.min.js",
+		"src/js/lib/skel.min.js",
+		"src/js/lib/util.js",
+		"src/js/main.js"
 		/** Page scripts */
-		"src/js/scripts.js"
+		//"src/js/scripts.js"
 	],
 	/** @type {Object of Array} CSS source files to concatenate and minify */
 	cssminSrc = {

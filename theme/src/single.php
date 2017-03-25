@@ -2,7 +2,8 @@
 
 	<main role="main" aria-label="Content">
 	<!-- section -->
-	<section>
+	<section class="wrapper style1 align-center">
+     <div class="inner">
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -62,6 +63,7 @@
 
 	<?php endif; ?>
 
+	</div>
 	</section>
 	<!-- /section -->
 	</main>

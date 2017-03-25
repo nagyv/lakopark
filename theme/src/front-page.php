@@ -2,7 +2,7 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section class="banner style2">
+		<section class="banner style2 onload-image-fade-in onload-content-fade-right fullscreen orient-center content-align-center image-position-center">
         <div class="content">
 
 			<h1><?php the_title(); ?></h1>

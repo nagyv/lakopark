@@ -12,7 +12,6 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>">
 
-			// check if the post has a Post Thumbnail assigned to it.
 				<?php the_content(); ?>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>

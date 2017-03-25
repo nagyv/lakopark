@@ -13,6 +13,7 @@
 			<article id="post-<?php the_ID(); ?>">
 
 				<?php the_content(); ?>
+				<?php html5blank_nav(); ?>
 
 				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 

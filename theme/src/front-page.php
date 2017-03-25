@@ -15,12 +15,6 @@
 				<?php the_content(); ?>
 				<?php html5blank_nav(); ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
 			</article>
 			<!-- /article -->
 

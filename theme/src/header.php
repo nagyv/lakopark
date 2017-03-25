@@ -26,5 +26,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+        <?php if (!is_front_page()) { html5blank_nav(); } ?>
+
 		<!-- wrapper -->
 		<div id="wrapper" class="divided">

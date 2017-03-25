@@ -1,8 +1,8 @@
-<?php /* Template Name: Kozepso szoveg, korbe keppel */ get_header(); ?>
+<?php /* Template Name: Korben levo kis kep, jobbra szoveg */ get_header(); ?>
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section class="banner style2 onload-image-fade-in onload-content-fade-right fullscreen orient-center content-align-center image-position-center">
+		<section class="banner onload-image-fade-in onload-content-fade-right style3 fullscreen orient-right image-position-left content-align-center">
         <div class="content">
 
 			<h1><?php the_title(); ?></h1>
@@ -13,7 +13,6 @@
 			<article id="post-<?php the_ID(); ?>">
 
 				<?php the_content(); ?>
-				<?php html5blank_nav(); ?>
 
 			</article>
 			<!-- /article -->

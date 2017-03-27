@@ -72,7 +72,7 @@ function html5blank_nav()
     array(
         'theme_location'  => 'header-menu',
         'menu'            => '',
-        'container'       => 'nav',
+        'container'       => 'div',
         'container_class' => 'menu-{menu slug}-container',
         'container_id'    => '',
         'menu_class'      => 'menu',

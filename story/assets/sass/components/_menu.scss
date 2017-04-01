@@ -3,4 +3,25 @@
     a {
         color: _palette(invert, fg-light);    
     }
+    ul ul {
+        display: none;
+        //opacity: 0;
+        position: absolute;
+        background-color: _palette(invert, bg-alt);
+        z-index: 10000;
+        margin-left: -1rem;
+        border: 2px solid #ffffff;
+        border-radius: _size(border-radius) * 2;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    li:hover ul {
+        display: block;
+        @include vendor('transition', 'opacity 0.75s ease-in-out');
+    }
+    ul ul li {
+        display: block;
+        text-align: left;
+    }
 }

@@ -26,7 +26,11 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-        <?php if (!is_front_page()) { html5blank_nav(); } ?>
+        <?php if (!is_front_page()) { ?>
+        <div id="header" class="wrapper style1 align-center invert">
+            <?php html5blank_nav(); ?>
+        </div>
+        <?php } ?>
 
 		<!-- wrapper -->
 		<div id="wrapper" class="divided">

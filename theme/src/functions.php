@@ -497,7 +497,7 @@ function section_shortcode($attrs) {
       'section_class' => "wrapper style1 align-center",
    ), $atts));
 
-   $return_string = '</div></article></section><section class="' . $section_class . '"><div class="inner">';
+   $return_string = '</div></section><section class="' . $section_class . '"><div class="inner">';
    return $return_string;
 }
 add_shortcode('section', 'section_shortcode');

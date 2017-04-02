@@ -319,10 +319,6 @@
 
 			// Orientation.
 				&.orient-right {
-					// ...
-				}
-
-				&.orient-left {
 					@include vendor('flex-direction', 'row-reverse');
 
 					@include breakpoint(small) {
@@ -330,6 +326,11 @@
 							@include vendor('flex-direction', 'column-reverse');
 						}
 					}
+
+				}
+
+				&.orient-left {
+					// ...
 				}
 
 			// Content Alignment.
@@ -394,7 +395,7 @@
 			width: $image-size;
 			height: $image-size;
 			border-radius: 100%;
-			margin: 0 (_size(element-margin) * 1.75) _size(element-margin) 0;
+			margin: 0 0 _size(element-margin) (_size(element-margin) * 1.75);
 
 			img {
 				@include vendor('object-fit', 'cover');
@@ -430,7 +431,7 @@
 			.image {
 				width: ($image-size * 0.75);
 				height: ($image-size * 0.75);
-				margin: 0 (_size(element-margin) * 1) _size(element-margin) 0;
+				margin: 0 0 _size(element-margin) (_size(element-margin) * 1);
 			}
 		}
 
@@ -456,12 +457,12 @@
 					@include vendor('flex-direction', 'row');
 
 					.image {
-						margin: 0 0 _size(element-margin) (_size(element-margin) * 1.75);
+						margin: 0 (_size(element-margin) * 1.75) _size(element-margin) 0;
 					}
 
 					@include breakpoint(small) {
 						.image {
-							margin: 0 0 _size(element-margin) (_size(element-margin) * 1);
+							margin: 0 (_size(element-margin) * 1) _size(element-margin) 0;
 						}
 					}
 

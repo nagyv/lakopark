@@ -4,7 +4,7 @@
 		<!-- section -->
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>">
-		<section class="banner onload-image-fade-in onload-content-fade-right style3 fullscreen orient-right image-position-left content-align-center">
+		<section class="spotlight onload-image-fade-in onload-content-fade-right style2 fullscreen orient-right image-position-left content-align-center">
 		<?php if ( has_post_thumbnail() ) { ?>
 			<div class="image">
 				<?php the_post_thumbnail(); ?>

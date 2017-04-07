@@ -1,6 +1,10 @@
 #header.invert {
     background-color: _palette(invert, bg-header);
     padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+
     ul {
         margin: 0;
     }

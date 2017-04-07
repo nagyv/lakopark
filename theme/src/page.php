@@ -26,7 +26,7 @@
 			<!-- /article -->
 		</div>
 		</section>
-
+		<?php endwhile; ?>
 		<?php else: ?>
 
 		<!-- section -->
@@ -45,7 +45,6 @@
 		</div>
 		</section>
 		<!-- /section -->
-		<?php endwhile; ?>
 		<?php endif; ?>
 
 	</main>

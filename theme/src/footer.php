@@ -1,3 +1,8 @@
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-area')) ?>
+			</div>
+		</footer>
 		</div>
 		<!-- /wrapper -->
 

@@ -220,8 +220,8 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 1', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
+        'before_widget' => '<section><div id="%1$s" class="inner %2$s">',
+        'after_widget' => '</div></section>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
@@ -231,8 +231,8 @@ if (function_exists('register_sidebar'))
         'name' => __('Widget Area 2', 'html5blank'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
+        'before_widget' => '<section><div id="%1$s" class="inner %2$s">',
+        'after_widget' => '</div></section>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));

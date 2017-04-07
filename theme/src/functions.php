@@ -494,10 +494,10 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 function section_shortcode($attrs) {
    extract(shortcode_atts(array(
-      'section_class' => "wrapper style1 align-center",
+      'section_class' => "",
    ), $atts));
 
-   $return_string = '</div></section><section class="' . $section_class . '"><div class="inner">';
+   $return_string = '</div></section><section class="wrapper style1 ' . $section_class . '"><div class="inner">';
    return $return_string;
 }
 add_shortcode('section', 'section_shortcode');

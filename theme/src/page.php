@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 
 	<main role="main" aria-label="Content">
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<?php
+		$section_class = get_post_meta(get_theID(), "section-class", true);
+		?>
 		<!-- section -->
-		<section class="wrapper style1 align-center">
+		<section class="wrapper style1 <?php echo $section_class;?>">
         <div class="inner">
 
 			<h1><?php the_title(); ?></h1>
-
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,10 +24,16 @@
 
 			</article>
 			<!-- /article -->
-
-		<?php endwhile; ?>
+		</div>
+		</section>
 
 		<?php else: ?>
+
+		<!-- section -->
+		<section class="wrapper style1">
+        <div class="inner">
+
+			<h1><?php the_title(); ?></h1>
 
 			<!-- article -->
 			<article>
@@ -34,12 +42,12 @@
 
 			</article>
 			<!-- /article -->
-
-		<?php endif; ?>
-
 		</div>
 		</section>
 		<!-- /section -->
+		<?php endwhile; ?>
+		<?php endif; ?>
+
 	</main>
 
 <?php get_sidebar(); ?>

@@ -2,7 +2,7 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section class="wrapper style1 align-center">
+		<section class="wrapper style1">
         <div class="inner">
 
 			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>

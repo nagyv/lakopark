@@ -3,7 +3,7 @@
 	<main role="main" aria-label="Content">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<?php
-		$section_class = get_post_meta(get_theID(), "section-class", true);
+		$section_class = get_post_meta(get_the_ID(), "section-class", true);
 		?>
 		<!-- section -->
 		<section class="wrapper style1 <?php echo $section_class;?>">

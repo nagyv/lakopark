@@ -66,7 +66,7 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav()
+function html5blank_nav($depth=2)
 {
     wp_nav_menu(
     array(
@@ -84,7 +84,7 @@ function html5blank_nav()
         'link_before'     => '',
         'link_after'      => '',
         'items_wrap'      => '<ul id="%1$s" class="actions %2$s">%3$s</ul>',
-        'depth'           => 2,
+        'depth'           => $depth,
         'walker'          => ''
         )
     );

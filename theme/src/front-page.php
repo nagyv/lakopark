@@ -14,7 +14,7 @@
 			<article id="post-<?php the_ID(); ?>">
 
 				<?php the_content(); ?>
-				<?php html5blank_nav(); ?>
+				<?php html5blank_nav(1); ?>
 
 			</article>
 			<!-- /article -->

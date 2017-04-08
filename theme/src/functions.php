@@ -520,3 +520,8 @@ function section_shortcode($attrs) {
    return $return_string;
 }
 add_shortcode('section', 'section_shortcode');
+
+function menu_shortcode($attrs) {
+   html5blank_nav(1);
+}
+add_shortcode('menu', 'menu_shortcode');

@@ -4,9 +4,10 @@
 		<!-- section -->
 		<section class="banner style2 onload-image-fade-in onload-content-fade-right fullscreen orient-center content-align-center image-position-center">
         <div class="content">
-
+			<header>
 			<h1><?php the_title(); ?></h1>
-
+			<p><?php bloginfo( 'description' ); ?></p>
+			</header>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->

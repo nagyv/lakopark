@@ -4,6 +4,11 @@
 		<!-- section -->
 		<article id="post-<?php the_ID(); ?>">
 		<section class="banner style2 onload-image-fade-in onload-content-fade-right fullscreen orient-center content-align-center image-position-center">
+		<?php if ( has_post_thumbnail() ) { ?>
+			<div class="image">
+				<?php the_post_thumbnail(); ?>
+			</div>
+		<?php } ?>
         <div class="content">
 			<header>
 			<h1><?php the_title(); ?></h1>
@@ -23,11 +28,6 @@
 		<?php endif; ?>
 
 		</div>
-		<?php if ( has_post_thumbnail() ) { ?>
-			<div class="image">
-				<?php the_post_thumbnail(); ?>
-			</div>
-		<?php } ?>
 		</section>
 		</article>
 		<!-- /section -->

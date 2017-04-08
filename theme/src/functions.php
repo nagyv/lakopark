@@ -507,7 +507,7 @@ function section_shortcode($attrs) {
       'section_class' => "",
       'image' => "",
       'text_side' => 'right',
-   ), $atts));
+   ), $attrs));
 
    if($image) {
       $return_string = '</div></section><section class="spotlight onload-image-fade-in onload-content-fade-right style1 image-position-center ' . 'orient-' . $text_side . ' ' . $section_class . '">';

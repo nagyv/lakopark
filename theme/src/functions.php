@@ -505,12 +505,12 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 function section_shortcode($attrs) {
    extract(shortcode_atts(array(
       'section_class' => "",
-      'image' => false,
-      'text-side' => 'right',
+      'image' => "",
+      'text_side' => 'right',
    ), $atts));
 
    if($image) {
-      $return_string = '</div></section><section class="spotlight onload-image-fade-in onload-content-fade-right style1 image-position-center ' . 'orient-' . $text-side . ' ' . $section_class . '">';
+      $return_string = '</div></section><section class="spotlight onload-image-fade-in onload-content-fade-right style1 image-position-center ' . 'orient-' . $text_side . ' ' . $section_class . '">';
       $return_string .= '<div class="image"><img src="' . $image . '"/></div>';
       $return_string .= '<div class="content">';
    } else {

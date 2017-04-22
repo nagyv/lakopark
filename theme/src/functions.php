@@ -503,6 +503,6 @@ function section_shortcode($attrs) {
 add_shortcode('section', 'section_shortcode');
 
 function menu_shortcode($attrs) {
-   html5blank_nav(1, false);
+   return html5blank_nav(1, false);
 }
 add_shortcode('menu', 'menu_shortcode');

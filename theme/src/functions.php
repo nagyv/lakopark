@@ -516,7 +516,7 @@ function my_gallery_shortcode($attrs, $content=null) {
    if ($title) {
     $inner = '<div class="inner"><h2>' . $title . '</h2></div>';
    }
-   return '</div></section><section class="wrapper style1 align-center">' . $inner . '<div class="gallery style2 medium lightbox onscroll-fade-in">' . $content';
+   return '</div></section><section class="wrapper style1 align-center">' . $inner . '<div class="gallery style2 medium lightbox onscroll-fade-in">' . do_shortcode($content);
 }
 add_shortcode('gallery', 'my_gallery_shortcode');
 

@@ -66,7 +66,7 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function html5blank_nav($depth=2)
+function html5blank_nav($depth=2, $echo=true)
 {
     wp_nav_menu(
     array(
@@ -77,7 +77,7 @@ function html5blank_nav($depth=2)
         'container_id'    => '',
         'menu_class'      => 'menu',
         'menu_id'         => '',
-        'echo'            => true,
+        'echo'            => $echo;,
         'fallback_cb'     => 'wp_page_menu',
         'before'          => '',
         'after'           => '',
@@ -436,12 +436,6 @@ add_filter('image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wid
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
-// Shortcodes
-add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
-add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
-
-// Shortcodes above would be nested like this -
-// [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
 /*------------------------------------*\
     Custom Post Types
@@ -489,19 +483,6 @@ function create_post_type_html5()
     ShortCode Functions
 \*------------------------------------*/
 
-// Shortcode Demo with Nested Capability
-function html5_shortcode_demo($atts, $content = null)
-{
-    return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
-}
-
-// Shortcode Demo with simple <h2> tag
-function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
-{
-    return '<h2>' . $content . '</h2>';
-}
-
-
 function section_shortcode($attrs) {
    extract(shortcode_atts(array(
       'section_class' => "",
@@ -522,6 +503,6 @@ function section_shortcode($attrs) {
 add_shortcode('section', 'section_shortcode');
 
 function menu_shortcode($attrs) {
-   html5blank_nav(1);
+   html5blank_nav(1, false);
 }
 add_shortcode('menu', 'menu_shortcode');

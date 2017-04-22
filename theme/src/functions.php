@@ -77,7 +77,7 @@ function html5blank_nav($depth=2, $echo=true)
         'container_id'    => '',
         'menu_class'      => 'menu',
         'menu_id'         => '',
-        'echo'            => $echo;,
+        'echo'            => $echo,
         'fallback_cb'     => 'wp_page_menu',
         'before'          => '',
         'after'           => '',

@@ -68,7 +68,7 @@ if (function_exists('add_theme_support'))
 // HTML5 Blank navigation
 function html5blank_nav($depth=2, $echo=true)
 {
-    wp_nav_menu(
+    return wp_nav_menu(
     array(
         'theme_location'  => 'header-menu',
         'menu'            => '',

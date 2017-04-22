@@ -506,3 +506,21 @@ function menu_shortcode($attrs) {
    return html5blank_nav(1, false);
 }
 add_shortcode('menu', 'menu_shortcode');
+
+function gallery_shortcode($attrs, $content=null) {
+   extract(shortcode_atts(array(
+    'title' => "",
+    ), $attrs));
+
+   $inner = "";
+   if ($title) {
+    $inner = '<div class="inner"><h2>' . $title . '</h2></div>';
+   }
+   return '<section class="wrapper style1 align-center">' . $inner . '<div class="gallery style2 medium lightbox onscroll-fade-in">' . $content . '</div></section>';
+}
+add_shortcode('gallery', 'gallery_shortcode');
+
+function gallery_item_shortcode($attrs, $content=null) {
+   return '<article>' . $content . '<div class="caption"></div></article>';
+}
+add_shortcode('gallery_item', 'gallery_item_shortcode');

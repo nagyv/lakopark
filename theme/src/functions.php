@@ -528,3 +528,20 @@ function gallery_item_shortcode($attrs, $content=null) {
    return '<article>' . $content . '<div class="caption"></div></article>';
 }
 add_shortcode('gallery_item', 'gallery_item_shortcode');
+
+function my_media_category_shortcode($attrs, $content=null) {
+   extract(shortcode_atts(array(
+    'title' => "",
+    ), $attrs));
+
+   $inner = "";
+   if ($title) {
+    $inner = '<div class="inner"><h2>' . $title . '</h2></div>';
+   }
+   $query = new WP_Query( array( 'media_category' => 'holt-maros' ) );
+   var_dump($query);
+   $result = '</div></section><section class="wrapper style1 align-center">' . $inner . '<div class="gallery style2 medium lightbox onscroll-fade-in">' . do_shortcode($content);
+   // removing all <br> tags
+   return preg_replace( '[^(<br( \/)?>)*|(<br( \/)?>)*$]', '', $result );
+}
+add_shortcode('media_gallery', 'my_media_category_shortcode');

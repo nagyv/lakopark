@@ -151,8 +151,10 @@ function html5blank_styles()
         // Register CSS
         wp_enqueue_style('html5blank');
     } else {
+        wp_register_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        wp_enqueue_style('fontawesome');
         // Custom CSS
-        wp_register_style('html5blankcssmin', get_template_directory_uri() . '/style.css', array(), '1.0');
+        wp_register_style('html5blankcssmin', get_template_directory_uri() . '/style.css', array('fontawesome'), '1.0');
         // Register CSS
         wp_enqueue_style('html5blankcssmin');
     }

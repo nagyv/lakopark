@@ -529,8 +529,9 @@ function gallery_item_shortcode($attrs, $content=null) {
 }
 add_shortcode('gallery_item', 'gallery_item_shortcode');
 
-function my_media_category_shortcode($attrs, $content=null) {
+function my_media_category_shortcode($attrs, $slug, $content=null) {
    extract(shortcode_atts(array(
+    'slug' => ""
     'title' => "",
     ), $attrs));
 
@@ -538,10 +539,27 @@ function my_media_category_shortcode($attrs, $content=null) {
    if ($title) {
     $inner = '<div class="inner"><h2>' . $title . '</h2></div>';
    }
-   $query = new WP_Query( array( 'media_category' => 'holt-maros' ) );
-   var_dump($query);
-   $result = '</div></section><section class="wrapper style1 align-center">' . $inner . '<div class="gallery style2 medium lightbox onscroll-fade-in">' . do_shortcode($content);
-   // removing all <br> tags
-   return preg_replace( '[^(<br( \/)?>)*|(<br( \/)?>)*$]', '', $result );
+   $qargs = array(
+     'post_type' => 'attachment',
+     'post_mime_type' => 'image',
+     'post_status' => 'inherit',
+     'posts_per_page' => -1,
+     'tax_query' => array(
+        array(
+            'taxonomy' => 'media_category',
+            'field'    => 'slug',
+            'terms'    => $slug,
+        ),
+     ),
+   );
+   $query = new WP_Query( $qargs );
+   
+   $result = '<div class="gallery style2 medium lightbox onscroll-fade-in">';
+   foreach ($query->posts as $post) {
+       $result .= '<article><img src="' . wp_get_attachment_url($post->ID) . '"/><div class="caption"></div></article>'
+       ;
+   }
+   $result .= '</div>';
+   return $result;
 }
 add_shortcode('media_gallery', 'my_media_category_shortcode');

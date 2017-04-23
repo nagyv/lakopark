@@ -531,7 +531,7 @@ add_shortcode('gallery_item', 'gallery_item_shortcode');
 
 function my_media_category_shortcode($attrs, $slug, $content=null) {
    extract(shortcode_atts(array(
-    'slug' => ""
+    'slug' => "",
     'title' => "",
     ), $attrs));
 

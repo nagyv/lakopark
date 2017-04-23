@@ -25,53 +25,22 @@
 			</article>
 			<!-- /article -->
 			<section>
-				<form method="post" action="#">
+				<form method="post" action="https://formspree.io/info@airplastic.hu">
 					<div class="field half first">
-						<label for="name">Name</label>
+						<label for="name">Név</label>
 						<input type="text" name="name" id="name" value="" />
 					</div>
 					<div class="field half">
-						<label for="email">Email</label>
+						<label for="email">E-mail</label>
 						<input type="email" name="email" id="email" value="" />
 					</div>
 					<div class="field">
-						<label for="department">Department</label>
-						<div class="select-wrapper">
-							<select name="department" id="department">
-								<option value="">- Category -</option>
-								<option value="1">Manufacturing</option>
-								<option value="2">Shipping</option>
-								<option value="3">Administration</option>
-								<option value="4">Human Resources</option>
-							</select>
-						</div>
-					</div>
-					<div class="field third first">
-						<input type="radio" id="priority-low" name="priority" checked />
-						<label for="priority-low">Low Priority</label>
-					</div>
-					<div class="field third">
-						<input type="radio" id="priority-normal" name="priority" />
-						<label for="priority-normal">Normal Priority</label>
-					</div>
-					<div class="field third">
-						<input type="radio" id="priority-high" name="priority" />
-						<label for="priority-high">High Priority</label>
-					</div>
-					<div class="field">
-						<label for="message">Message</label>
+						<label for="message">Üzenet</label>
 						<textarea name="message" id="message" rows="6"></textarea>
 					</div>
-					<div class="field half first">
-						<input type="checkbox" id="copy" name="copy" />
-						<label for="copy">Email me a copy of this message</label>
-					</div>
-					<div class="field half">
-						<input type="checkbox" id="human" name="human" checked />
-						<label for="human">I am a human and not a robot</label>
-					</div>
+					<input type="hidden" name="_next" value="//jalagati.webfactional.com/lakopark/kapcsolat/uzenet-elkuldve" />
 					<ul class="actions">
-						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+						<li><input type="submit" name="submit" id="submit" value="Üzenet küldése" /></li>
 					</ul>
 				</form>
 			</section>

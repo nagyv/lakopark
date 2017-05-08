@@ -563,3 +563,8 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
    return $result;
 }
 add_shortcode('media_gallery', 'my_media_category_shortcode');
+
+function google_map_shortcode($attrs, $content=null) {
+   return '<div id="map_wrapper"><div id="map_canvas" class="mapping"></div></div>';
+}
+add_shortcode('google_map', 'google_map_shortcode');

@@ -556,8 +556,11 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
    
    $result = '<div class="gallery style2 medium lightbox onscroll-fade-in">';
    foreach ($query->posts as $post) {
-       $result .= '<article><img src="' . wp_get_attachment_url($post->ID) . '"/><div class="caption"></div></article>'
-       ;
+       $result .= '<article><img src="' . wp_get_attachment_url($post->ID) . '"/><div class="caption">';
+       if($post->excerpt) {
+        $result .= '<h3>' . $post->excerpt . '</h3><p>$post->content</p><ul class="actions"><li><span class="button small">Nagyítás</span></li></ul>';
+       }
+       $result .='</div></article>';
    }
    $result .= '</div>';
    return $result;

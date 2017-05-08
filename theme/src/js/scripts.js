@@ -7,6 +7,5 @@
 
   jQuery(function($) {
   })
-});
 
 } ( this, jQuery ));

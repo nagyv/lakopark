@@ -534,13 +534,10 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
     'slug' => "",
     'title' => "",
     'link' => false,
-    'height' => ""
+    'height' => "",
+    'close_first' => false
     ), $attrs));
 
-   $inner = "";
-   if ($title) {
-    $inner = '<div class="inner"><h2>' . $title . '</h2></div>';
-   }
    $qargs = array(
      'post_type' => 'attachment',
      'post_mime_type' => 'image',
@@ -562,7 +559,16 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
     $height_argument = '';
    }
 
-   $result = '<div class="gallery style2 medium lightbox onscroll-fade-in">';
+   if($close_first) {
+    $result = '</div></section><section class="wrapper style1 align-center">';
+   } else {
+    $result = '';
+   }
+   if ($title) {
+    $result .= '<div class="inner"><h2>' . $title . '</h2></div>';
+   }
+
+   $result .= '<div class="gallery style2 medium lightbox onscroll-fade-in">';
    foreach ($query->posts as $post) {
        $result .= '<article>';
        if($link) {

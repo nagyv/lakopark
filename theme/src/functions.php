@@ -533,7 +533,8 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
    extract(shortcode_atts(array(
     'slug' => "",
     'title' => "",
-    'link' => false
+    'link' => false,
+    'height' => ""
     ), $attrs));
 
    $inner = "";
@@ -555,13 +556,19 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
    );
    $query = new WP_Query( $qargs );
    
+   if($height) {
+    $height_argument = ' height="' . $height . '" ';
+   } else {
+    $height_argument = '';
+   }
+
    $result = '<div class="gallery style2 medium lightbox onscroll-fade-in">';
    foreach ($query->posts as $post) {
        $result .= '<article>';
        if($link) {
         $result .= '<a href="' . wp_get_attachment_url($post->ID) . '" class="image">'; 
        }
-       $result .= '<img src="' . wp_get_attachment_url($post->ID) . '"/>';
+       $result .= '<img src="' . wp_get_attachment_url($post->ID) . '"' . $height_argument . '/>';
        if($link) {
         $result .= '</a>';
        }

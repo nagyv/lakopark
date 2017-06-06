@@ -11,6 +11,7 @@
 		<?php } ?>
         <div class="content">
 			<header>
+			<img src="/wp-content/uploads/sites/14/2017/06/holtmaros_logo_fa_szurke.png" />
 			<h1><?php the_title(); ?></h1>
 			<p><?php bloginfo( 'description' ); ?></p>
 			</header>

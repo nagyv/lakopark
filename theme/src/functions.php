@@ -573,7 +573,7 @@ function my_media_category_shortcode($attrs, $slug, $content=null) {
        $result .= '<article>';
        if($link) {
         $result .= '<a href="' . wp_get_attachment_url($post->ID) . '" class="image">'; 
-        $result .= '<img src="' . str_replace(".", "_540.", wp_get_attachment_url($post->ID)) . '"' . $height_argument . '/>';
+        $result .= '<img src="' . str_replace(".png", "_540.png", str_replace(".jpg", "_540.jpg", wp_get_attachment_url($post->ID))) . '"' . $height_argument . '/>';
         //$result .= '<img src="' . wp_get_attachment_url($post->ID) . '"' . $height_argument . '/>';
         $result .= '</a>';
        } else {

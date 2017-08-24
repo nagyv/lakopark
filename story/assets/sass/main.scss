@@ -268,12 +268,3 @@ $cursor-disabled:                not-allowed !default;
 
 @import 'components/_navbar.scss';
 @import 'components/_navs.scss';
-
-.home {
-	header {
-		img {
-			width: 100%;
-			max-width: 200px;
-		}
-	}
-}

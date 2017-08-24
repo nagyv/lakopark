@@ -13,10 +13,13 @@
 	}
 
 	header {
+		img {
+			width: 100%;
+			max-width: 200px;
+		}
 		p {
 			position: relative;
 			margin: (_size(element-margin) * -0.325) 0 (_size(element-margin) * 0.75) 0;
-			font-style: italic;
 		}
 
 		h1 + p {

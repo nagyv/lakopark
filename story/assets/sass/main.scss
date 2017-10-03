@@ -36,7 +36,7 @@ $font-size-base:          14px !default;
 $line-height-base:        1.428571429 !default; // 20/14
 $grid-gutter-width:         30px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+$line-height-computed:    20px; //floor(($font-size-base * $line-height-base)) !default; // ~20px
 $navbar-height: 		90px;
 $navbar-margin-bottom: 24px;
 $navbar-padding-horizontal: floor(($grid-gutter-width / 2)) !default;

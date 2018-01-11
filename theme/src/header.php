@@ -28,7 +28,10 @@
 
         <?php if (!is_front_page()) { ?>
         <div id="header" class="wrapper style1 align-center invert">
-            <?php html5blank_nav(); ?>
+			<?php html5blank_nav(); ?>
+			<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+				<?php dynamic_sidebar( 'widget-area-1' ); ?>
+			</div>
         </div>
         <?php } ?>
 

@@ -219,10 +219,10 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Top widgets', 'html5blank'),
+        'description' => __('Widgets shown around the top of the page', 'html5blank'),
         'id' => 'widget-area-1',
-        'before_widget' => '<section><div id="%1$s" class="inner %2$s">',
+        'before_widget' => '<section><div id="%1$s" class="inner %2$s actions">',
         'after_widget' => '</div></section>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'

@@ -10,6 +10,11 @@
 			</div>
 		<?php } ?>
         <div class="content">
+				<?php if ( is_active_sidebar( 'widget-area-1' ) ) : ?>
+					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+						<?php dynamic_sidebar( 'widget-area-1' ); ?>
+					</div>
+				<?php endif; ?>
 			<header>
 			<img src="/wp-content/uploads/sites/14/2017/06/holtmaros_logo_fa_szurke.png" />
 			<h1><?php the_title(); ?></h1>
